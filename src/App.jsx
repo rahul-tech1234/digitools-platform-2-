@@ -1,19 +1,19 @@
 import { Suspense } from 'react';
 import './App.css'
-import NavBar from "./components/NavBar/NavBar";
-
+import NavBar from './components/NavBar/NavBar';
+import Products from "./components/Prices/Products";
 const fetchPrice=async()=>{
   const res=await fetch("/PricingData.json");
   return res.json();
 }
-function App() {
- const pricePromise=fetchPrice();
- //console.log(pricePromise)
- return (
+function App() { 
+  const PricePromise=fetchPrice();
+  return (
     <>
-    <Suspense fallback={<h2>ha</h2>}>
-        <NavBar pricePromise={pricePromise}></NavBar>
-        </Suspense>  
+    <Suspense fallback={<span className="loading loading-dots loading-xl"></span>}>
+    <NavBar></NavBar>
+    <Products PricePromise={PricePromise}></Products>
+    </Suspense>
     </>
   )
 }
