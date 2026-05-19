@@ -1,0 +1,138 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Resume Kit",
+    "description": "Basic toolkit for creating professional resumes.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "20+ templates",
+      "PDF export",
+      "Basic customization",
+      "Email support"
+    ],
+    "icon": "FaFileAlt",
+    "img":"../src/assets/products/design-tool.png"
+  },
+  {
+    "id": 2,
+    "name": "Pro Resume Builder",
+    "description": "Advanced resume builder for job seekers.",
+    "price": 39,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Cover letter builder",
+      "Cloud storage"
+    ],
+    "icon": "FaBriefcase",
+    "img":"../src/assets/products/operation.png"
+  },
+  {
+    "id": 3,
+    "name": "Portfolio Designer",
+    "description": "Create stunning online portfolios easily.",
+    "price": 59,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best-seller",
+    "features": [
+      "Custom domain",
+      "Drag & drop editor",
+      "Responsive design",
+      "SEO optimization"
+    ],
+    "icon": "FaPalette",
+    "img":"../src/assets/products/portfolio.png"
+  },
+  {
+    "id": 4,
+    "name": "Career Boost Pack",
+    "description": "Everything needed for career growth.",
+    "price": 99,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Resume review",
+      "LinkedIn optimization",
+      "Interview preparation",
+      "Premium templates"
+    ],
+    "icon": "FaRocket",
+    "img":"../src/assets/products/shopping-cart.png"
+  },
+  {
+    "id": 5,
+    "name": "Team Hiring Suite",
+    "description": "Recruitment tools for growing businesses.",
+    "price": 149,
+    "period": "yearly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Team collaboration",
+      "Applicant tracking",
+      "Analytics dashboard",
+      "Priority support"
+    ],
+    "icon": "FaUsers",
+    "img":"../src/assets/products/social-media.png"
+  },
+  {
+    "id": 6,
+    "name": "Freelancer Toolbox",
+    "description": "Perfect toolkit for freelancers and creators.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best-seller",
+    "features": [
+      "Invoice generator",
+      "Proposal templates",
+      "Client management",
+      "Export to PDF"
+    ],
+    "icon": "FaTools",
+    "img":"../src/assets/products/writing_2327400 1.png"
+  },
+  {
+    "id": 7,
+    "name": "Business Growth Plan",
+    "description": "Premium business management solution.",
+    "price": 199,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Advanced reports",
+      "Automation tools",
+      "Custom branding",
+      "Dedicated manager"
+    ],
+    "icon": "FaChartLine",
+    "img":"../src/assets/rocket.png"
+  },
+  {
+    "id": 8,
+    "name": "Lifetime Premium Access",
+    "description": "Unlock all premium features forever.",
+    "price": 299,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best-seller",
+    "features": [
+      "Lifetime updates",
+      "Unlimited downloads",
+      "VIP support",
+      "All premium resources"
+    ],
+    "icon": "FaInfinity",
+    "img":"../src/assets/package.png"
+  }
+]
