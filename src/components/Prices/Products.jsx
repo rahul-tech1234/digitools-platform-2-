@@ -1,10 +1,10 @@
 import { use, useState } from "react";
 import SingleProducts from "../SingleProducts/SingleProducts";
-//import SingleCard from "../SingleCard/SingleCard";
-const Products = ({PricePromise}) => {
+import SingleCard from "../SingleCard/SingleCard";
+const Products = ({PricePromise,addCard,setAddCard}) => {
     const PriceData=use(PricePromise);
-    const [selectbtn,setSelectbtn]=useState("Products")
-    //console.log(PriceData);
+    const [selectbtn,setSelectbtn]=useState("Products");
+    const [total,setTotal]=useState(0);
     return (
         <div className="mt-25 w-10/12 mx-auto">
             <div className="space-y-2 text-center">
@@ -15,17 +15,23 @@ const Products = ({PricePromise}) => {
                     ?"bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-4xl text-white px-2 py-1":""}`} onClick={()=>{setSelectbtn("Products")}}>Products</button>
                     <button className={`${selectbtn==="Cart"
                     ?"bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-4xl text-white px-3 py-1"
-                        :""}`} onClick={()=>{setSelectbtn("Cart")}}>Cart(0)</button>
+                        :""}`} onClick={()=>{setSelectbtn("Cart")}}>Cart({addCard.length})</button>
                 </div>
             </div>
-            <div className="grid md:grid-cols-3 space-x-3 space-y-3 mt-10">
+            <div className="">
+            
+            
             {
-                PriceData.map(Data=>{
-                   return(
-                    //<h1>Data.name</h1>
-                     <SingleProducts key={Data.id} Data={Data}></SingleProducts>
-                   );
-                }) 
+                selectbtn==="Products"
+                ?<SingleProducts PriceData={PriceData} 
+                addCard={addCard} 
+                setAddCard={setAddCard}
+                total={total}
+                setTotal={setTotal}></SingleProducts>
+                :<SingleCard total={total}
+                addCard={addCard}
+                setTotal={setTotal}
+                setAddCard={setAddCard} ></SingleCard>
             }
         </div>
         </div>
