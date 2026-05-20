@@ -7,11 +7,11 @@ const State = () => {
     <p className="stat-desc text-white">Active Users</p>
   </div>
 
-  <iv className=" stat  border-r-2 border-white border-b-0">
+  <div className=" stat  border-r-2 border-white border-b-0">
     
     <h1 className="stat-value">200+</h1>
     <p className="stat-desc text-white">Premium Tools</p>
-  </iv>
+  </div>
 
   <div className="stat">
     <h1 className="stat-value">4.9</h1>
