@@ -31,7 +31,8 @@ const Products = ({PricePromise,addCard,setAddCard}) => {
                 :<SingleCard total={total}
                 addCard={addCard}
                 setTotal={setTotal}
-                setAddCard={setAddCard} ></SingleCard>
+                setAddCard={setAddCard}
+                 ></SingleCard>
             }
         </div>
         </div>

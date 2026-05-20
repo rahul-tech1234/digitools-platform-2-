@@ -47,7 +47,7 @@ const Footer = () => {
 </footer>
 <div className="h-px bg-gray-50 w-10/12 mx-auto"></div>
   <div className="flex justify-around bg-black text-[#627382] py-4">
-  <p class>© 2026 Digitools. All rights reserved.</p>
+  <p>© 2026 Digitools. All rights reserved.</p>
   <div className="flex justify-between">
     <p>Privacy Policy</p>
     <p>Terms of Service</p>

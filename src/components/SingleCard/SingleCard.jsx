@@ -2,7 +2,8 @@ import Empty from "../Empty/Empty";
 import { toast } from "react-toastify";
 toast
 const SingleCard = ({total,addCard,setTotal,setAddCard}) => {
-   const removeCard=(select)=>{
+   
+    const removeCard=(select)=>{
         const filterCard=addCard.filter(delet=>select.name!==delet.name);
         setTotal(total-select.price);
         //console.log(select.price)

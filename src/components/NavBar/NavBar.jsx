@@ -1,6 +1,6 @@
 import { FiShoppingCart } from "react-icons/fi";
 const NavBar = ({addCard}) => {
-//console.log(addCard.length)
+console.log(Array.isArray(addCard))
   return (
         <div className="navbar bg-base-100 w-10/12 mx-auto mt-2">
   <div className="navbar-start">
@@ -34,7 +34,14 @@ const NavBar = ({addCard}) => {
   <div className="navbar-end gap-5">
             <div className={`${addCard.lenght===0?"":"indicato"} relative`}>
           <FiShoppingCart className="size-6"/>
-          <span className={`${addCard.lenght===0?"bg-red-50":"indicator-item bg-red-500"} text-white w-5 h-5 text-center rounded-full badge badge-sm absolute -top-3 -right-2 `}>{addCard.length===0?"":addCard.length}</span>
+
+          {addCard.length > 0 && (
+                <span
+                  className={`'indicator-item bg-red-500 text-white w-5 h-5 text-center rounded-full badge badge-sm absolute -top-3 -right-2 `}
+                >
+                  {addCard.length}
+                </span>
+              )}
         </div>
 
 

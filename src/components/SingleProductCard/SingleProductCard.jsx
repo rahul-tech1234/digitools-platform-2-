@@ -2,8 +2,9 @@ import { useState } from "react";
 import { MdDone } from "react-icons/md";
 import { toast } from "react-toastify";
 const SingleProductCard = ({Data,setAddCard,addCard,total,setTotal}) => {
-  //console.log(Data.price)  
-  const [isSelected,setIsSelected]=useState(false);
+//console.log(Data.price)  
+const [isSelected,setIsSelected]=useState(false);
+  //console.log(isSelected);
     const handleClick=()=>{
         setIsSelected(true);
         setAddCard([...addCard,Data])
