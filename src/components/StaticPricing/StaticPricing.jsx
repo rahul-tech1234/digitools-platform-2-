@@ -10,9 +10,9 @@ const TransparentPricing = () => {
 <p className='mb-10 font-light text-[#627382]'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
 </div>
 
-<div className='flex sm:flex-col md:flex-row justify-center items-center gap-3'>
+<div className='grid w-full sm:grid-cols-3 justify-center items-center gap-5'>
 {/* 1st card */}
-<div className={`card w-96 shadow-sm ${cardSelecte==="Starter"?"bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white":"bg-gray-100"}`} onClick={()=>setCardSelect("Starter")}>
+<div className={`card  shadow-sm ${cardSelecte==="Starter"?"bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white":"bg-gray-100"}`} onClick={()=>setCardSelect("Starter")}>
   <div className="card-body">
 
     <span className="badge badge-xs bg-[#FEF3C6] text-[#BB4D00] absolute px-3 py-2.5 rounded-4xl -top-2 left-[40%]">Most Popular</span>
@@ -46,7 +46,7 @@ const TransparentPricing = () => {
 </div>
 {/* 2nd card */}
 
-<div className={`card w-96 shadow-sm ${cardSelecte==="Pro"?"bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white":"bg-gray-100"}`} onClick={()=>setCardSelect("Pro")}>
+<div className={`card  shadow-sm ${cardSelecte==="Pro"?"bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white":"bg-gray-100"}`} onClick={()=>setCardSelect("Pro")}>
   <div className="card-body">
 
    
@@ -82,7 +82,7 @@ const TransparentPricing = () => {
 {/* 3rd card */}
 
 
-<div className={`card shadow-sm w-96 ${cardSelecte==="Enterprise"?"bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white":"bg-gray-100"}`} onClick={()=>setCardSelect("Enterprise")}>
+<div className={`card shadow-sm  ${cardSelecte==="Enterprise"?"bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white":"bg-gray-100"}`} onClick={()=>setCardSelect("Enterprise")}>
   <div className="card-body">
 
     
