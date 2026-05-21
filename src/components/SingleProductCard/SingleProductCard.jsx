@@ -7,10 +7,16 @@ const [isSelected,setIsSelected]=useState(false);
   //console.log(isSelected);
     const handleClick=()=>{
         setIsSelected(true);
-        setAddCard([...addCard,Data])
-        setTotal(total+Data.price);
-        toast.success("Added To cart");
-        
+        const isFindCard=addCard.find(card=>card.name===Data.name);
+        if (isFindCard) {
+          return  toast.error("Item already in a cart");  
+        }else{
+
+          setAddCard([...addCard,Data])
+          toast.success("Added To cart");
+          setTotal(total+Data.price);
+          
+        }
         //console.log(addCard);
     }
     
